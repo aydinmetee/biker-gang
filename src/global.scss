@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,73 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+ion-content.main-home {
+  --background: #f6f9fa !important;
+}
+
+.main-bottom {
+  background: #f6f9fa;
+  padding-top: 20px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: -100px;
+  height: 100%;
+  position: relative;
+}
+
+.main-list {
+  padding-bottom: 5px;
+}
+
+.card-bg {
+  background-color: #f5f5f5;
+  box-shadow: 0 10px 20px rgb(10 1 157 / 20%),
+    1px -6px 6px hsl(246deg 99% 19% / 5%);
+  border-radius: 20px;
+  margin-bottom: 0px;
+  border: 1px solid #b8bff1;
+}
+
+.card-bg:hover {
+  background-color: #ebebeb;
+  border: 1px solid #b8bff1;
+}
+
+.card-bg:active {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-border {
+  padding: 15px 0 15px 0px;
+}
+
+.card-h2 {
+  color: #010752;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+}
+
+.icon-box {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  background: #1c236e;
+  border-radius: 100%;
+  width: 40%;
+  height: 40%;
+  padding: 10px;
+  float: right;
+  margin-right: -20px;
+  margin-bottom: -20px;
+  margin-top: 6px;
+}
+
+.main-icon {
+  width: 60%;
+  float: left;
+  font-size: 30px;
+  padding-left: 20px;
+  padding-top: 5px;
+  color: #09cb8a;
+}

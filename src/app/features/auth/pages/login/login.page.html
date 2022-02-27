@@ -1,0 +1,22 @@
+<ion-content>
+  <div [formGroup]="form" style="padding-top: 20px" class="grid">
+    <div class="col-12 md:col-12 lg:col-12">
+      <label for="username">Username : </label>
+      <input id="username" type="text" pInputText formControlName="username" />
+    </div>
+    <div class="col-12 md:col-12 lg:col-12">
+      <label>Password : </label>
+      <input type="password" pPassword formControlName="password" />
+    </div>
+    <div class="col-12 md:col-12 lg:col-12 text-right">
+      <button
+        pButton
+        type="button"
+        label="Register"
+        (click)="navToRegister()"
+      ></button>
+
+      <button pButton type="button" label="Log In" (click)="login()"></button>
+    </div>
+  </div>
+</ion-content>

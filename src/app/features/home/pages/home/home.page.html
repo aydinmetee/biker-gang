@@ -1,0 +1,28 @@
+<ion-content class="main-home">
+  <div class="main-bottom">
+    <div class="main-title">
+      <span>Anasayfa</span>
+    </div>
+    <ion-row style="margin-top: 20%">
+      <ion-col *ngFor="let card of cards" [size]="card.size">
+        <ion-card [routerLink]="card.url" class="card-bg">
+          <ion-card-content class="card-border">
+            <ion-text>
+              <h2 class="card-h2">{{card.header }}</h2>
+            </ion-text>
+            <div class="main-icon">
+              <ion-icon name="{{card.icon}}"></ion-icon>
+            </div>
+            <div class="icon-box">
+              <ion-icon
+                slot="start"
+                name="chevron-forward-outline"
+                class="login-icon"
+              ></ion-icon>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
